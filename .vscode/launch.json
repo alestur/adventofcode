@@ -5,12 +5,37 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Package",
+            "name": "Debug cards.go",
             "type": "go",
             "request": "launch",
-            "mode": "auto",
-            "program": "${fileDirname}",
-            "args": ["2023_01_input.txt"]
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/2023_04",
+            "args": ["${workspaceFolder}/2023_04_input.txt"],
+            "showLog": true,
+            "trace": "log",
+            "buildFlags": ["-tags", "debug"]
+        }
+        {
+            "name": "Debug engine.go",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/2023_03",
+            "args": ["${workspaceFolder}/2023_03_input.txt"],
+            "showLog": true,
+            "trace": "log",
+            "buildFlags": ["-tags", "debug"]
+        },
+        {
+            "name": "Debug elfo.go",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd/2023_02",
+            "args": ["${workspaceFolder}/2023_02_input.txt"],
+            "showLog": true,
+            "trace": "log",
+            "buildFlags": ["-tags", "debug"]
         }
     ]
 }
